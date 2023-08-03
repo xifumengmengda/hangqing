@@ -1,0 +1,221 @@
+@import '../../index.less'; // 头部高度等常量
+// 隐藏滚动条
+::-webkit-scrollbar {
+    display: none;
+}
+.cutline{
+    height: 10px;
+    width: 100%;
+    background: #F5F5F5;
+}
+.selfContail{ 
+    height: 100%; 
+    padding-top: @headHeight;
+    box-sizing: border-box ; 
+    background-color: white;
+    .head{
+        height: @headHeight; 
+        margin-top: -@headHeight;
+        position: fixed;
+        width: 100%;
+        left: 0;
+    }
+    .bodyContail{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .headTop{
+            width: 100%;
+            height: 148px;
+            display: flex;
+            .headLeft{
+                width: 191px;
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .top{
+                    font-size: 36px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    line-height: 44px;
+                    letter-spacing: 1px;
+                    display: flex;
+                    flex-direction: row;
+                    .first{
+                        margin-right: 12px;
+                    }
+                }
+                .buttom{
+                    font-size: 28px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    line-height: 34px;
+                    display: flex;
+                    flex-direction: row;
+                    .first{
+                        margin-right: 12px;
+                    }
+                }
+                .red{
+                    color: #E93030;
+                }
+                .green{
+                    color: #5FA116;
+                }
+            }
+            .headRight{
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                margin-left: 64px;
+                align-items: center;
+                // justify-content: center;
+                .firstIcon{
+                    margin-left: 66px;
+                    div{
+                        font-size: 20px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #333333;
+                        line-height: 28px;
+
+                    }
+                }
+                .icon{
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+        }
+        .headButtom{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .noneImg{
+                width: 90px;
+                height: 90px;
+                margin-top: 176px;
+            }
+            .noneText{
+                font-size: 32px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                line-height: 45px;
+                margin-top: 70px;
+            }
+        }
+    }
+    
+}
+
+.selfListContail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .leftListStyle{
+        width: 200px;
+        .leftTitle{
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #999999;
+            line-height: 34px;
+        }
+        .leftName{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .name{
+                font-size: 28px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                line-height: 40px;
+            }
+            .code{
+                font-size: 24px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                line-height: 34px;
+            }
+        }
+    }
+    .rightListStyle{
+        width: calc(100% - 200px);
+        white-space: nowrap;
+        overflow-x: scroll;
+        .rightTitle{
+            height: 80px;
+           
+            // -webkit-overflow-scrolling:touch;
+            display: flex;
+            flex-direction: row;
+            .title{
+                display: flex;
+                .showtext{
+                    width: 140px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    font-size: 28px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #999999;
+                    line-height: 34px;
+                    div:last-child{
+                        margin-right: 20px;
+                    }
+                }
+                
+            }
+        }
+        .rightName{
+            height: 100px;
+            display: flex;
+            .title{
+                display: flex;
+                .showText{
+                    width: 140px;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    font-size: 28px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    
+                    line-height: 34px;
+                    div:last-child{
+                        margin-right: 20px;
+                    }
+                }
+                .red{
+                    color: #E93030;
+                }
+                .green{
+                    color: #5FA116;
+                }
+                .black{
+                    color: #333333;;
+                }
+                
+            }
+        }
+    }
+}

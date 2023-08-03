@@ -1,0 +1,192 @@
+@titleHeight:60px;
+
+.boxDashbord {
+    width: 100%;
+    background: linear-gradient(rgb(20, 20, 20) 14%, rgb(0, 46, 107) 100%);
+    color: white;
+    
+
+    .title{
+        font-size: 25px;
+        font-weight: 600;
+        padding: 5px;
+        background-color: #253CD7;
+        width: 120px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .topText{
+        width: 100%;
+        height: @titleHeight;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        padding: 10px;
+    }
+    .container{
+        display: flex;
+        height: calc(97vh - @titleHeight );
+    }
+
+    .lineBorder{
+        border: 2px solid #253CD7;
+        border-radius: 5px;
+    }
+    .left {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+
+        .top {
+            height: 60%;
+            display: flex;
+
+            .topLeft{
+                width: 30%;
+                font-size: 12px;
+                background: #172239;
+
+                .topcontent{
+                    height: 56%;
+                }
+                .content{
+                    padding: 10px 15px;
+                    line-height: 45px;
+                    // height: 45%;
+                }
+
+                .toplisticon{
+                    height: 40%;
+                }
+
+                .listicon{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content:flex-start;
+                    width: 100%;
+                    height: 85%;
+
+                    .icon{
+                        width:33%; /* 每个div元素占据容器的50%宽度 */
+                        height: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .iconleft{
+                            height:100%;
+                            display: flex;
+                            align-items: center;
+
+                            .innerBox{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background: #26468F;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-right: 10px;
+                            }
+
+                        }
+
+                        .iconright{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+            .topRight{
+                width: 40%;
+                margin: 0px 10px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .map{
+                    width: 95%;
+                    height: 95%;
+                }
+            }
+
+            .rightTtt {
+                width: 30%;
+                height: 100%;
+                margin: 0px 10px;
+                
+                .rightTop{
+                    width: 100%;
+                    height: 49%;
+                    
+                    .charts{
+                        width: 100%;
+                        height: 95%;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            height: 38%;
+            margin-top: 10px;
+            display: flex;
+            width: 100%;
+            
+            .bottomLeft{
+                width: 40%;
+                height: 100%;
+
+                .preview{
+                    width: 100%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .warn{
+                        width: 45%;
+                        height: 60%;
+                    }
+                }
+            }
+
+
+            .bottomRight{
+                width: 59%;
+                margin: 0px 10px;
+                height: 100%;
+                .row{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #0D3A75;
+                    display: flex;
+                    .t{
+                        width: 19%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .tred{
+                        color: #864075;
+                    }
+                    .tblub{
+                        color: #0D4BCB;
+                        cursor: pointer;
+                    }
+                }
+    
+                .header{
+                    background-color: #021E43;
+                }
+            }
+        }
+    }
+
+    
+}

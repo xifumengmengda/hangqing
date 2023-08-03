@@ -1,0 +1,172 @@
+@import '../../index.less'; // 头部高度等常量
+// 隐藏滚动条
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bankuaiContail{ 
+    height: 100%; 
+    padding-top: @headHeight;
+    box-sizing: border-box ; 
+    background-color: white;
+    .head{
+        height: @headHeight; 
+        margin-top: -@headHeight;
+        position: fixed;
+        width: 100%;
+        left: 0;
+    }
+    .bodyContail{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .leftListStyle{
+            width: 200px;
+            .leftTitle{
+                height: 80px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+                line-height: 34px;
+            }
+            .leftName{
+                height: 100px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .name{
+                    font-size: 28px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #333333;
+                    line-height: 40px;
+                }
+                .code{
+                    font-size: 24px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #333333;
+                    line-height: 34px;
+                }
+            }
+        }
+        .rightListStyle{
+            width: calc(100% - 200px);
+            white-space: nowrap;
+            overflow-x: scroll;
+            .rightTitle{
+                height: 80px;
+               
+                // -webkit-overflow-scrolling:touch;
+                display: flex;
+                flex-direction: row;
+                .title{
+                    display: flex;
+                    .showtext{
+                        width: 140px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        font-size: 28px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #999999;
+                        line-height: 34px;
+                        div:last-child{
+                            margin-right: 20px;
+                        }
+                    }
+                    
+                }
+            }
+            .rightName{
+                height: 100px;
+                display: flex;
+                .title{
+                    display: flex;
+                    .showText{
+                        width: 140px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        font-size: 28px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        
+                        line-height: 34px;
+                        div:last-child{
+                            margin-right: 20px;
+                        }
+                    }
+                    .red{
+                        color: #E93030;
+                    }
+                    .green{
+                        color: #5FA116;
+                    }
+                    .black{
+                        color: #333333;;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .tac{
+        height: 100%;
+        .title{
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+            .leftName{
+                width: 200px;
+                font-size: 28px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+                line-height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .rightList{
+                width: calc(100% - 200px);
+                height: 80px;
+                white-space: nowrap;
+                overflow-x: scroll;
+                // -webkit-overflow-scrolling:touch;
+                display: flex;
+                flex-direction: row;
+                .rightName{
+                    display: flex;
+                    .fontshow{
+                        width: 140px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        font-size: 28px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #999999;
+                        line-height: 34px;
+                        div:last-child{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
